@@ -1,0 +1,23 @@
+//數值
+$header: 66px;
+$footer: 100px;
+
+// 覆寫 Bootstrap 的顏色變數
+$primary: #007bff;
+$secondary: #6c757d;
+$white: #ffffff;
+$font-size-base: 16px;
+$success: #007bff;
+
+
+@mixin single-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@mixin multiline-ellipsis {
+    display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/2bd8048d04.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Barriecito&family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <title>TAI Zhi | 台誌</title>
+  </head>
+  <body data-bs-theme="light" class="position-relative">
+    <header class="fixed-top px-3">
+      <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">TAI Zhi</a>
+          <ul class="navbar-nav d-flex flex-row pc_nav">
+            <li class="nav-item container-lg me-4 me-lg-0">
+              <a class="nav-link" aria-current="page" href="./html/shop.html">
+                <p>行程選購</p>
+              </a>
+            </li>
+            <li class="nav-item container-lg me-4 me-lg-0">
+              <a class="nav-link" href="./html/plan.html">
+                <p>行程規劃</p>
+              </a>
+            </li>
+            <li class="nav-item container-lg">
+              <a class="nav-link" href="./html/magazine.html">
+                <p>雜誌出版</p>
+              </a>
+            </li>
+          </ul>
+          <ol class="d-flex flex-row justify-content-end right-area">
+            <li class="me-4 d-flex">
+              <button
+                class="p-2 px-3 bg-transparent position-relative cart_btn"
+                role="button"
+              >
+                <i class="bi bi-cart3 fs-5"></i>
+                <div
+                  class="position-absolute translate-middle rounded-pill bg-danger text-reset p-1 cartCount"
+                >
+                  0
+                </div>
+              </button>
+            </li>
+            <li>
+              <button class="btn btn-outline-primary login_btn" role="button">
+                <a href="./html/loginSignup.html"
+                  >登入
+                  <!-- <p>登入</p> -->
+                </a>
+              </button>
+            </li>
+          </ol>
+          <button
+            class="navbar-toggler px-2"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon py-1"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Logo</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item container-lg me-4 me-lg-0">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="./html/shop.html"
+                  >
+                    <p>行程選購</p>
+                  </a>
+                </li>
+                <li class="nav-item container-lg me-4 me-lg-0">
+                  <a class="nav-link" href="./html/plan.html">
+                    <p>行程規劃</p>
+                  </a>
+                </li>
+                <li class="nav-item container-lg">
+                  <a class="nav-link" href="./html/magazine.html">
+                    <p>雜誌出版</p>
+                  </a>
+                </li>
+              </ul>
+              <div
+                class="d-flex container-fluid justify-content-start position-absolute bottom-0 py-4"
+              >
+                <button
+                  class="btn btn-primary d-flex align-items-center mx-4 cart_btn sideCanvas"
+                  role="button"
+                >
+                  <i class="bi bi-cart3 fs-5 pe-1"></i>
+                  <div
+                    class="position-absolute translate-middle rounded-pill bg-danger text-reset p-1 cartCount"
+                  >
+                    0
+                  </div>
+                  <p>購物車</p>
+                </button>
+                <button
+                  class="btn btn-outline-primary align-content-center login_btn"
+                  role="button"
+                >
+                  <a href="./loginSignup.html"
+                    >登入
+                    <!-- <p>登入</p> -->
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="home_page position-relative">
+      <!-- Hero Section -->
+      <section class="hero text-white position-relative">
+        <div class="hero-container text-center">
+          <img src="./assets/hero/hualien1.jpg" class="hero-1" />
+          <img src="./assets/hero/hualien2.jpg" class="hero-2" />
+          <img src="./assets/hero/hualien3.jpg" class="hero-3" />
+          <div class="text-group">
+            <h1 class="fw-bold">探索台灣之美</h1>
+            <p class="fs-5 mb-4">規劃屬於你的小旅程</p>
+            <div class="btnGroup">
+              <button
+                class="btn btn-primary me-3"
+                onclick="window.location='./html/shop.html'"
+              >
+                行程選購
+              </button>
+              <button
+                class="btn btn-outline-light"
+                onclick="window.location='./html/plan.html'"
+              >
+                行程規劃
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="straight-line"></div>
+      <!-- 雜誌精選 -->
+      <section class="magazine-section py-4">
+        <div
+          class="magazine-container d-flex align-content-center justify-content-center p-5"
+        >
+          <div class="tableOFcontent w-50 d-flex justify-content-end me-5">
+            <!-- 精選內容 -->
+            <div class="card tw-card w-100 active">
+              <div class="card-body">
+                <h4 class="card-title">
+                  來 吃 ⽔ 果<br />
+                  FRUITY TAIWAN
+                </h4>
+                <ul class="card-text">
+                  <li>
+                    <span>01 編輯室的話</span>
+                  </li>
+                  <li>
+                    <p>From My Table to Yours</p>
+                    <span>04 雞酒</span>
+                  </li>
+                  <li>
+                    <p>台灣小知識</p>
+                    <span>06 如果你來到台灣，我會立刻帶你進菜市場</span>
+                  </li>
+                  <li>
+                    <span>22 走進嘉義冰果室，來份專屬的新鮮甘甜</span>
+                  </li>
+                  <li>
+                    <span>26 水果店：承載記憶的台南老派冰果室</span>
+                  </li>
+                  <li>
+                    <span>30 台北舊城的冰涼散步</span>
+                  </li>
+                  <li>
+                    <span>34 秋冬水果旅行，看見台灣農場美景</span>
+                  </li>
+                  <li>
+                    <span>41 台灣探果地圖</span>
+                  </li>
+                  <li>
+                    <span>42 探索台灣農村魅力</span>
+                  </li>
+                  <li>
+                    <span>44 島嶼詩歌 Formosa Verse 太魯閣</span>
+                  </li>
+                  <li>
+                    <span>46 水上山城，順勢自在過日子</span>
+                  </li>
+                  <li>
+                    <span>48 Events 各地觀光、活動資訊</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="card jp-card w-100">
+              <div class="card-body">
+                <h5 class="card-title">
+                  台東 池上・関山<br />
+                  心 洗 わ れ る 田 園 風 景
+                </h5>
+                <ul class="card-text">
+                  <li>
+                    <span>04 トラベル特集</span>
+                    <p>台東 池上・関山 心洗われる田園風景</p>
+                  </li>
+                  <li>
+                    <span
+                      >18 グルメ特集<br />
+                      台北で味わう本物の味
+                    </span>
+                    <p>台湾原住民族料理</p>
+                  </li>
+                  <li>
+                    <span>22 特別企画</span>
+                    <p>屏東 山海の旅</p>
+                  </li>
+                  <li>
+                    <span>30 台湾鉄道</span>
+                    <p>途中下車の旅</p>
+                    <span>富里駅―大自然の中でリラックス</span>
+                  </li>
+                  <li>
+                    <span>36 特別企画</span>
+                    <p>台湾伝統市場のすすめ</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="card kr-card w-100">
+              <div class="card-body">
+                <h5 class="card-title">
+                  FEATURE<br />
+                  화동 동타이완 花東 자연속으로
+                </h5>
+                <ul class="card-text">
+                  <li>
+                    <span>02 News</span>
+                    <p></p>
+                  </li>
+                  <li>
+                    <span>03 Statistics</span>
+                    <p></p>
+                  </li>
+                  <li>
+                    <span>04 Feature Story</span>
+                    <p>화동 - 동타이완 자연속으로</p>
+                  </li>
+                  <li>
+                    <span>16 Food Culture</span>
+                    <p>타이완 면 요리의 진화</p>
+                  </li>
+                  <li>
+                    <span>20 Special Plan</span>
+                    <p>타이완 향토주</p>
+                  </li>
+                  <li>
+                    <span>28 Special Plan</span>
+                    <p>강변 마켓 작은 여행</p>
+                  </li>
+                  <li>
+                    <span>34 Outer City Districts</span>
+                    <p>션컹 라오제</p>
+                  </li>
+                  <li>
+                    <span>38 Special Plan</span>
+                    <p>타이완의 재래시장 속으로</p>
+                  </li>
+                  <li>
+                    <span>42 Column</span>
+                    <p>
+                      홍콩 ? NONO! 가오슝 궈마오 커뮤니티 타이완 마라톤 타이완시
+                      -《타이루거》 신활수
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="w-50 lasts-magazine">
+            <h2 class="mb-5 ms-4">當期雜誌</h2>
+            <div class="d-flex justify-content-around">
+              <img
+                src="./assets/magazine/latest_TW.png"
+                class="z-3 latest-mag tw"
+              />
+              <img
+                src="./assets/magazine/latest_JP.png"
+                class="z-2 latest-mag jp"
+              />
+              <img
+                src="./assets/magazine/latest_KR.png"
+                class="z-1 latest-mag kr"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 音樂季 / 市集 / 展覽 -->
+      <section class="events-section">
+        <div class="event-container d-flex">
+          <div
+            class="d-flex flex-column justify-content-between pt-4 event-menu"
+          >
+            <div class="mb-5 text-group px-4">
+              <h2 class="mb-3">近期<br />活動</h2>
+              <span class="active"
+                >文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹</span
+              >
+              <span
+                >文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹</span
+              >
+              <span
+                >文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹</span
+              >
+            </div>
+            <ul class="category-list">
+              <li
+                class="d-flex align-content-center justify-content-between px-4 py-3"
+              >
+                <p class="">展覽</p>
+                <i class="bi bi-arrow-right fs-4"></i>
+              </li>
+              <li
+                class="d-flex align-content-center justify-content-between px-4 py-3 active"
+              >
+                <p>音樂季 / 演出</p>
+                <i class="bi bi-arrow-right fs-4"></i>
+              </li>
+              <li
+                class="d-flex align-content-center justify-content-between px-4 py-3"
+              >
+                <p>市集活動</p>
+                <i class="bi bi-arrow-right fs-4"></i>
+              </li>
+            </ul>
+          </div>
+          <div class="content p-4">
+            <div class="swiper outer_swiper">
+              <div class="swiper-wrapper">
+                <!-- 第一個主分類 -->
+                <div class="swiper-slide">
+                  <div class="swiper inner_swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img
+                          src="./assets/event/music_1.png"
+                          class="event-pic mb-4 img-modal"
+                          style="width: 550px; height: 550px"
+                        />
+                        <div
+                          class="event-information d-flex align-items-center justify-content-between"
+                          style="width: 550px"
+                        >
+                          <div class="">
+                            <h3 class="event-name" data-event-name="">
+                              爛泥發芽
+                            </h3>
+                            <p class="event-place" data-event-place="">
+                              新莊新月廣場
+                            </p>
+                            <p class="event-date" data-event-place="">
+                              12/28-12/29
+                            </p>
+                          </div>
+                          <div class="" style="width: 200px">
+                            <p class="text-body-secondary">
+                              文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          class="event-pic mb-4 img-modal"
+                          style="width: 550px; height: 550px"
+                        />
+                        <div
+                          class="event-information d-flex align-items-center justify-content-between"
+                          style="width: 550px"
+                        >
+                          <div class="">
+                            <h3 class="event-name" data-event-name="">
+                              活動名稱
+                            </h3>
+                            <p class="event-place" data-event-place="">
+                              活動地點
+                            </p>
+                            <p class="event-date" data-event-place="">
+                              活動地點
+                            </p>
+                          </div>
+                          <div class="" style="width: 200px">
+                            <p class="text-body-secondary">
+                              文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img
+                          class="event-pic mb-4 img-modal"
+                          style="width: 550px; height: 550px"
+                        />
+                        <div
+                          class="event-information d-flex align-items-center justify-content-between"
+                          style="width: 550px"
+                        >
+                          <div class="">
+                            <h3 class="event-name" data-event-name="">
+                              活動名稱
+                            </h3>
+                            <p class="event-place" data-event-place="">
+                              活動地點
+                            </p>
+                            <p class="event-date" data-event-place="">
+                              活動地點
+                            </p>
+                          </div>
+                          <div class="" style="width: 200px">
+                            <p class="text-body-secondary">
+                              文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-prev inner-prev-1">
+                      <i class="bi bi-arrow-left-circle"></i>
+                    </div>
+                    <div class="swiper-button-next inner-next-1">
+                      <i class="bi bi-arrow-right-circle"></i>
+                    </div>
+                  </div>
+                </div>
+                <!-- 第二個主分類 -->
+                <div class="swiper-slide">
+                  <div class="swiper-slide">
+                    <div class="swiper inner_swiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img
+                            class="event-pic mb-4 img-modal"
+                            style="width: 550px; height: 550px"
+                          />
+                          <div
+                            class="event-information d-flex align-items-center justify-content-between"
+                            style="width: 550px"
+                          >
+                            <div class="">
+                              <h3 class="event-name" data-event-name="">
+                                活動名稱
+                              </h3>
+                              <p class="event-place" data-event-place="">
+                                活動地點
+                              </p>
+                              <p class="event-date" data-event-place="">
+                                活動地點
+                              </p>
+                            </div>
+                            <div class="" style="width: 200px">
+                              <p class="text-body-secondary">
+                                文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            class="event-pic mb-4 img-modal"
+                            style="width: 550px; height: 550px"
+                          />
+                          <div
+                            class="event-information d-flex align-items-center justify-content-between"
+                            style="width: 550px"
+                          >
+                            <div class="">
+                              <h3 class="event-name" data-event-name="">
+                                活動名稱
+                              </h3>
+                              <p class="event-place" data-event-place="">
+                                活動地點
+                              </p>
+                              <p class="event-date" data-event-place="">
+                                活動地點
+                              </p>
+                            </div>
+                            <div class="" style="width: 200px">
+                              <p class="text-body-secondary">
+                                文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            class="event-pic mb-4 img-modal"
+                            style="width: 550px; height: 550px"
+                          />
+                          <div
+                            class="event-information d-flex align-items-center justify-content-between"
+                            style="width: 550px"
+                          >
+                            <div class="">
+                              <h3 class="event-name" data-event-name="">
+                                活動名稱
+                              </h3>
+                              <p class="event-place" data-event-place="">
+                                活動地點
+                              </p>
+                              <p class="event-date" data-event-place="">
+                                活動地點
+                              </p>
+                            </div>
+                            <div class="" style="width: 200px">
+                              <p class="text-body-secondary">
+                                文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-button-prev inner-prev-1">
+                        <i class="bi bi-arrow-left-circle"></i>
+                      </div>
+                      <div class="swiper-button-next inner-next-1">
+                        <i class="bi bi-arrow-right-circle"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 第三個主分類 -->
+                <div class="swiper-slide display">
+                  <div class="swiper-slide">
+                    <div class="swiper inner_swiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img
+                            class="event-pic mb-4 img-modal"
+                            style="width: 550px; height: 550px"
+                          />
+                          <div
+                            class="event-information d-flex align-items-center justify-content-between"
+                            style="width: 550px"
+                          >
+                            <div class="">
+                              <h3 class="event-name" data-event-name="">
+                                活動名稱
+                              </h3>
+                              <p class="event-place" data-event-place="">
+                                活動地點
+                              </p>
+                              <p class="event-date" data-event-place="">
+                                活動地點
+                              </p>
+                            </div>
+                            <div class="" style="width: 200px">
+                              <p class="text-body-secondary">
+                                文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            class="event-pic mb-4 img-modal"
+                            style="width: 550px; height: 550px"
+                          />
+                          <div
+                            class="event-information d-flex align-items-center justify-content-between"
+                            style="width: 550px"
+                          >
+                            <div class="">
+                              <h3 class="event-name" data-event-name="">
+                                活動名稱
+                              </h3>
+                              <p class="event-place" data-event-place="">
+                                活動地點
+                              </p>
+                              <p class="event-date" data-event-place="">
+                                活動地點
+                              </p>
+                            </div>
+                            <div class="" style="width: 200px">
+                              <p class="text-body-secondary">
+                                文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <img
+                            class="event-pic mb-4 img-modal"
+                            style="width: 550px; height: 550px"
+                          />
+                          <div
+                            class="event-information d-flex align-items-center justify-content-between"
+                            style="width: 550px"
+                          >
+                            <div class="">
+                              <h3 class="event-name" data-event-name="">
+                                活動名稱
+                              </h3>
+                              <p class="event-place" data-event-place="">
+                                活動地點
+                              </p>
+                              <p class="event-date" data-event-place="">
+                                活動地點
+                              </p>
+                            </div>
+                            <div class="" style="width: 200px">
+                              <p class="text-body-secondary">
+                                文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-button-prev inner-prev-1">
+                        <i class="bi bi-arrow-left-circle"></i>
+                      </div>
+                      <div class="swiper-button-next inner-next-1">
+                        <i class="bi bi-arrow-right-circle"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 美食口袋名單 -->
+      <section class="foodie-section py-5">
+        <div
+          class="foodie-titleArea d-flex align-content-center justify-content-between px-5 pb-5 mb-5"
+        >
+          <div class="editor-recommend">
+            <h2 class="pb-2">口袋名單</h2>
+            <span class="sub-title">＊台誌編輯精選TOP3＊</span>
+            <p class="mt-3">
+              數百間饕客街頭美食小店數百間饕客街頭美食小店數百間饕客街頭美食小店數百間饕客街頭美食小店數百間饕客街頭美食小店數百間饕客街頭美食小店
+            </p>
+            <div class="slash"></div>
+          </div>
+          <hr />
+          <div class="place">
+            <div class="place-row d-flex align-items-center">
+              <button class="btn btn-outline-secondary me-2 rounded-0">
+                <p>探索附近的TOP#3</p>
+              </button>
+              <button class="food-type mx-2 active">
+                <p class="fs-3">ㄔㄔ</p>
+              </button>
+              <button class="food-type">
+                <p class="fs-3">ㄏㄏ</p>
+              </button>
+            </div>
+            <div class="place-list d-flex flex-wrap align-content-center mt-3">
+              <!-- 北部 -->
+              <p class="keelung" data-name="keelung">基隆市</p>
+              <p class="taipei" data-name="taipei">台北市</p>
+              <p class="new-taipei" data-name="new-taipei">新北市</p>
+              <p class="taoyuan" data-name="taoyuan">桃園市</p>
+              <p class="hsinchu" data-name="hsinchu">新竹市</p>
+              <p class="hsinchu-county" data-name="hsinchu-county">新竹縣</p>
+              <p class="yilan" data-name="yilan">宜蘭縣</p>
+
+              <!-- 中部 -->
+              <p class="miaoli" data-name="miaoli">苗栗縣</p>
+              <p class="taichung" data-name="taichung">台中市</p>
+              <p class="nantou" data-name="nantou">南投縣</p>
+              <p class="changhua" data-name="changhua">彰化縣</p>
+
+              <!-- 南部 -->
+              <p class="yunlin" data-name="yunlin">雲林縣</p>
+              <p class="chiayi" data-name="chiayi">嘉義市</p>
+              <p class="chiayi-county" data-name="chiayi-county">嘉義縣</p>
+              <p class="tainan" data-name="tainan">台南市</p>
+              <p class="kaohsiung" data-name="kaohsiung">高雄市</p>
+              <p class="pingtung" data-name="pingtung">屏東縣</p>
+
+              <!-- 東部 -->
+              <p class="hualien" data-name="hualien">花蓮縣</p>
+              <p class="taitung" data-name="taitung">台東縣</p>
+
+              <!-- 離島 -->
+              <p class="penghu" data-name="penghu">澎湖縣</p>
+              <p class="kinmen" data-name="kinmen">金門縣</p>
+              <p class="lienchiang" data-name="lienchiang">連江縣</p>
+            </div>
+          </div>
+        </div>
+        <div class="foodie-container d-flex gap-3 px-5">
+          <div class="rank active rounded-3 overflow-hidden position-relative">
+            <span class="sort position-absolute"> ① </span>
+            <div class="info-layer p-5">
+              <p class="name">好煎炸</p>
+              <div class="recommend-list d-flex align-content-center">
+                <p class="item">推薦品項1</p>
+                <p class="item">推薦品項2</p>
+                <p class="item">推薦品項3</p>
+              </div>
+            </div>
+            <div class="rounded-3 overflow-hidden rank-card">
+              <img
+                src="./assets/recommend/recommend_1.png"
+                class=""
+                style="transform: translateY(-30%)"
+              />
+            </div>
+          </div>
+          <div class="rank rounded-3 overflow-hidden position-relative">
+            <span class="sort position-absolute"> ② </span>
+            <div class="info-layer">
+              <p class="name">大池豆皮店</p>
+              <div class="recommend-list d-flex align-content-center">
+                <p class="item">推薦品項1</p>
+                <p class="item">推薦品項2</p>
+                <p class="item">推薦品項3</p>
+              </div>
+            </div>
+            <div class="rounded-3 overflow-hidden rank-card">
+              <img
+                src="./assets/recommend/recommend_2.png"
+                class=""
+                style="object-fit: cover; transform: translateY(-20%)"
+              />
+            </div>
+          </div>
+          <div class="rank overflow-hidden position-relative">
+            <span class="sort position-absolute"> ③ </span>
+            <div class="info-layer">
+              <p class="name">饗 A Joy</p>
+              <div class="recommend-list d-flex align-content-center">
+                <p class="item">推薦品項1</p>
+                <p class="item">推薦品項2</p>
+                <p class="item">推薦品項3</p>
+              </div>
+            </div>
+            <div class="rounded-3 overflow-hidden rank-card">
+              <img
+                src="./assets/recommend/recommend_3.png"
+                class=""
+                style="scale: 2.5"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 咖啡店巡禮 -->
+      <section class="cafeShop-section">
+        <div class="swiper store_swiper">
+          <div class="swiper-wrapper position-relative">
+            <div class="swiper-slide bg-body-tertiary position-relative">
+              <h2 class="cafe-tour position-absolute">咖啡店巡禮</h2>
+              <h1 class="cafe-name position-absolute" data-cafeName>
+                BIKE DE KOFFIE
+              </h1>
+              <div class="cafe-intro position-absolute" data-cafeIntro>
+                文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹
+              </div>
+              <img
+                src="./assets/recommend/cafe_1.png"
+                class="environment-pic position-absolute bottom-0"
+                style="width: 56%; height: 70%"
+              />
+              <img
+                src="./assets/recommend/cafe_1_1.png"
+                class="square-pic position-absolute"
+                style="width: 350px; height: 350px"
+              />
+              <div class="shop-info p-4 position-absolute">
+                <div
+                  class="address d-flex align-content-center mb-3"
+                  data-cafeAddress=""
+                >
+                  <i class="bi bi-geo-alt-fill me-2"></i>
+                  <p>台東縣池上鄉鐵花路 14 號</p>
+                </div>
+                <div
+                  class="openTime d-flex align-content-center"
+                  date-cafeOpenTime=""
+                >
+                  <i class="bi bi-clock-fill me-2"></i>
+                  <p>9:00-18:00、火曜定休</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide bg-body-tertiary position-relative">
+              <h2 class="cafe-tour position-absolute">咖啡店巡禮</h2>
+              <h1 class="cafe-name position-absolute" data-cafeName>
+                驛前大和咖啡館
+              </h1>
+              <div class="cafe-intro position-absolute" data-cafeIntro>
+                文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹
+              </div>
+              <img
+                src="./assets/recommend/cafe_2.png"
+                class="environment-pic position-absolute bottom-0"
+                style="width: 56%; height: 70%"
+              />
+              <img
+                src="./assets/recommend/cafe_2_2.png"
+                class="square-pic position-absolute"
+                style="width: 350px; height: 350px"
+              />
+              <div class="shop-info p-4 position-absolute">
+                <div
+                  class="address d-flex align-content-center mb-3"
+                  data-cafeAddress=""
+                >
+                  <i class="bi bi-geo-alt-fill me-2"></i>
+                  <p>屏東縣屏東市民族路 163 號</p>
+                </div>
+                <div
+                  class="openTime d-flex align-content-center"
+                  date-cafeOpenTime=""
+                >
+                  <i class="bi bi-clock-fill me-2"></i>
+                  <p>9:00-18:00</p>
+                </div>
+              </div>
+            </div>
+            <div class="store-prev">
+              <i class="bi bi-arrow-left-circle"></i>
+            </div>
+            <div class="store-next">
+              <i class="bi bi-arrow-right-circle"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 街道散策 -->
+      <section class="street-section py-5 bg-light">
+        <div class="street-container">
+          <h2 class="mb-3 ps-5">街道散策</h2>
+          <hr />
+          <div class="interduce ps-5 mb-4">
+            <p>後龍溪水 在這裡放慢速度，變得溫雅含蓄</p>
+          </div>
+          <div class="h-100 d-flex aligns-items-bottom street-pic-row">
+            <img
+              src="./assets/street/streetWalk_1.png"
+              class="object-fit-contain"
+              style="width: 500px"
+            />
+            <img
+              src="./assets/street/streetWalk_2.png"
+              class="object-fit-contain"
+            />
+            <img
+              src="./assets/street/streetWalk_3.png"
+              class="object-fit-contain"
+            />
+            <img
+              src="./assets/street/streetWalk_4.png"
+              class="object-fit-contain"
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="dayNight-toggle" class="form-check form-switch">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        role="switch"
+        id="flexSwitchCheckChecked"
+        checked
+      />
+    </div>
+    <div
+      class="cart-popup bg-light-subtle rounded shadow-lg position-absolute d-none"
+    >
+      <div
+        class="cart-header bg-light-subtle d-flex align-items-center justify-content-between pe-1 pt-2 ps-3 pb-1"
+      >
+        <i class="bi bi-triangle-fill text-bg-light-subtle"></i>
+        <h6 class="mb-0">購物車</h6>
+        <button class="clear-cart-btn btn btn-sm">清空購物車</button>
+      </div>
+      <div class="cart-items p-3">
+        <!-- 動態生成商品項目 -->
+        <div class="cart-item position-relative">
+          <button
+            type="button"
+            class="clear-ThisProduct position-absolute"
+            onclick="cart.removeItem('${item.productId}')"
+          >
+            <i class="bi bi-x"></i>
+          </button>
+          <p class="product-name fw-bold mb-2">
+            台東熱氣球嘉年華<span
+              class="product-count translate-middle rounded-pill bg-danger text-reset p-1 ms-1"
+              >3</span
+            >
+          </p>
+          <p class="product-option mb-2">親子方案</p>
+          <p class="single-price">NT$ 1191</p>
+        </div>
+      </div>
+      <div
+        class="cart-footer d-flex align-items-center justify-content-between p-3"
+      >
+        <p class="cart-total fw-bold text-danger">3573</p>
+        <button class="checkout-btn">結帳</button>
+      </div>
+    </div>
+    <button
+      onclick="topFunction()"
+      id="backToTop"
+      class="rounded fs-4"
+      role="button"
+    >
+      <i class="bi bi-arrow-up-short m-auto"></i>
+    </button>
+    <footer class="px-0 bg-body-tertiary">
+      <div
+        class="container d-flex align-content-center justify-content-between py-4 bg-transparent"
+      >
+        <div class="d-flex align-content-center footer-siteMap">
+          <a class="me-3 navbar-brand" href="./index.html"><h1>TAI Zhi</h1></a>
+          <div class="ms-3 web-info my-auto">
+            <ul class="d-flex align-content-center mb-2">
+              <li>
+                <a href=" " class="me-3">行程選購</a>
+              </li>
+              <li>
+                <a href="" class="me-3">行程規劃</a>
+              </li>
+              <li>
+                <a href="" class="">雜誌出版</a>
+              </li>
+            </ul>
+            <p class="text-secondary">
+              結合旅遊雜誌與行程規劃工具，為您打造便捷的文化旅遊體驗。
+            </p>
+          </div>
+        </div>
+        <div class="mt-auto cpoyright">
+          <ul class="d-flex align-content-center mb-1 socail-media">
+            <li class="me-2">
+              <a href="">
+                <i class="fa-brands fa-square-facebook fs-4"></i>
+              </a>
+            </li>
+            <li class="me-2">
+              <a href="">
+                <i class="fa-brands fa-instagram fs-4"></i>
+              </a>
+            </li>
+            <li class="me-2">
+              <a href="">
+                <i class="fa-brands fa-line fs-4"></i>
+              </a>
+            </li>
+            <li class="me-2">
+              <a href="">
+                <i class="fa-brands fa-square-threads fs-4"></i>
+              </a>
+            </li>
+          </ul>
+          <p class="text-secondary">
+            Copyright ©2024 TAI Zhi. All rights reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/cart.js"></script>
+    <script src="./js/main.js" type="module"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/gsap.js"></script>
+  </body>
+</html>

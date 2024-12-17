@@ -1,0 +1,1315 @@
+[
+  {
+    "id": 1,
+    "category": "旅遊體驗",
+    "tag": "",
+    "image_path": "../assets/shop/1.jpg",
+    "name": "墾丁海灘活動",
+    "price": 1429,
+    "location": "屏東縣恆春鎮墾丁路",
+    "coordinates": {
+      "latitude": 21.948704,
+      "longitude": 120.783906
+    },
+    "highlights": [
+      "親近大自然",
+      "鄰近國家公園",
+      "專業導遊解說"
+    ],
+    "description": [
+      {
+        "text": "設有舒適的房間與貼心的服務。",
+        "image_path": "../assets/shop/1_highlight1.jpg"
+      },
+      {
+        "text": "提供壯觀的城市全景。",
+        "image_path": "../assets/shop/1_highlight2.jpg"
+      },
+      {
+        "text": "鄰近當地著名景點，交通便利。",
+        "image_path": "../assets/shop/1_highlight3.jpg"
+      }
+    ],
+    "options": [
+      {
+        "option_name": "團體方案",
+        "summary": "多人預訂，價格更優惠",
+        "option_price": 2100
+      },
+      {
+        "option_name": "親子方案",
+        "summary": "適合全家出遊，內容豐富",
+        "option_price": 1929
+      },
+      {
+        "option_name": "標準方案",
+        "summary": "基本服務，適合初次體驗者",
+        "option_price": 2178
+      }
+    ],
+    "productID": "travel_1"
+  },
+  {
+    "id": 2,
+    "category": "旅遊體驗",
+    "tag": "",
+    "image_path": "../assets/shop/2.jpg",
+    "name": "清境農場住宿",
+    "price": 3489,
+    "location": "南投縣仁愛鄉大同村",
+    "coordinates": {
+      "latitude": 24.056978,
+      "longitude": 121.159612
+    },
+    "highlights": [
+      "特色文化活動",
+      "高速電梯體驗",
+      "親近大自然",
+      "360度全景視野",
+      "免費早餐"
+    ],
+    "description": [
+      {
+        "text": "每天提供免費早餐。",
+        "image_path": "../assets/shop/2_highlight1.jpg"
+      },
+      {
+        "text": "設有舒適的房間與貼心的服務。",
+        "image_path": "../assets/shop/2_highlight2.jpg"
+      },
+      {
+        "text": "提供壯觀的城市全景。",
+        "image_path": "../assets/shop/2_highlight3.jpg"
+      }
+    ],
+    "options": [
+      {
+        "option_name": "早鳥優惠",
+        "summary": "提早預訂享受特惠價格",
+        "option_price": 4169
+      },
+      {
+        "option_name": "豪華方案",
+        "summary": "包含額外服務，提升您的體驗",
+        "option_price": 3713
+      },
+      {
+        "option_name": "親子方案",
+        "summary": "適合全家出遊，內容豐富",
+        "option_price": 4203
+      }
+    ],
+    "productID": "travel_2"
+  },
+  {
+    "id": 3,
+    "category": "票券",
+    "tag": "hot",
+    "image_path": "../assets/shop/3.jpg",
+    "name": "日月潭遊船票",
+    "price": 1208,
+    "location": "南投縣魚池鄉日月潭",
+    "coordinates": {
+      "latitude": 23.864429,
+      "longitude": 120.915401
+    },
+    "highlights": [
+      "探索當地美食",
+      "適合全家同樂",
+      "特色文化活動",
+      "高速電梯體驗",
+      "親近大自然"
+    ],
+    "description": [
+      {
+        "text": "拍照打卡熱點，適合旅遊紀錄。",
+        "image_path": "../assets/shop/3_highlight1.jpg"
+      },
+      {
+        "text": "專業導覽讓您深入了解當地文化。",
+        "image_path": "../assets/shop/3_highlight2.jpg"
+      },
+      {
+        "text": "提供壯觀的城市全景。",
+        "image_path": "../assets/shop/3_highlight3.jpg"
+      }
+    ],
+    "options": [
+      {
+        "option_name": "團體方案",
+        "summary": "多人預訂，價格更優惠",
+        "option_price": 1262
+      },
+      {
+        "option_name": "標準方案",
+        "summary": "基本服務，適合初次體驗者",
+        "option_price": 1423
+      },
+      {
+        "option_name": "親子方案",
+        "summary": "適合全家出遊，內容豐富",
+        "option_price": 2162
+      }
+    ],
+    "productID": "travel_3"
+  },
+  {
+    "id": 4,
+    "category": "票券",
+    "tag": "twTravelerCard",
+    "image_path": "../assets/shop/4.jpg",
+    "name": "高雄愛河遊船",
+    "price": 3261,
+    "location": "高雄市前金區河東路",
+    "coordinates": {
+      "latitude": 22.631689,
+      "longitude": 120.301435
+    },
+    "highlights": [
+      "高速電梯體驗",
+      "豐富的自然生態",
+      "鄰近國家公園",
+      "完善的設施",
+      "特色文化活動"
+    ],
+    "description": [
+      {
+        "text": "鄰近當地著名景點，交通便利。",
+        "image_path": "../assets/shop/4_highlight1.jpg"
+      },
+      {
+        "text": "每天提供免費早餐。",
+        "image_path": "../assets/shop/4_highlight2.jpg"
+      },
+      {
+        "text": "拍照打卡熱點，適合旅遊紀錄。",
+        "image_path": "../assets/shop/4_highlight3.jpg"
+      }
+    ],
+    "options": [
+      {
+        "option_name": "標準方案",
+        "summary": "基本服務，適合初次體驗者",
+        "option_price": 4048
+      },
+      {
+        "option_name": "早鳥優惠",
+        "summary": "提早預訂享受特惠價格",
+        "option_price": 3988
+      },
+      {
+        "option_name": "豪華方案",
+        "summary": "包含額外服務，提升您的體驗",
+        "option_price": 3910
+      }
+    ],
+    "productID": "travel_4"
+  },
+  {
+    "id": 5,
+    "category": "票券",
+    "tag": "hot",
+    "image_path": "../assets/shop/5.jpg",
+    "name": "阿里山日出之旅",
+    "price": 2952,
+    "location": "嘉義縣阿里山鄉山美村",
+    "coordinates": {
+      "latitude": 23.518679,
+      "longitude": 120.799268
+    },
+    "highlights": [
+      "親近大自然",
+      "特色文化活動",
+      "高速電梯體驗",
+      "完善的設施"
+    ],
+    "description": [
+      {
+        "text": "專業導覽讓您深入了解當地文化。",
+        "image_path": "../assets/shop/5_highlight1.jpg"
+      },
+      {
+        "text": "設有舒適的房間與貼心的服務。",
+        "image_path": "../assets/shop/5_highlight2.jpg"
+      },
+      {
+        "text": "讓您享受獨特的放鬆時光。",
+        "image_path": "../assets/shop/5_highlight3.jpg"
+      }
+    ],
+    "options": [
+      {
+        "option_name": "豪華方案",
+        "summary": "包含額外服務，提升您的體驗",
+        "option_price": 3373
+      },
+      {
+        "option_name": "團體方案",
+        "summary": "多人預訂，價格更優惠",
+        "option_price": 3186
+      },
+      {
+        "option_name": "親子方案",
+        "summary": "適合全家出遊，內容豐富",
+        "option_price": 3660
+      }
+    ],
+    "productID": "travel_5"
+  },
+  {
+    "id": 6,
+    "category": "票券",
+    "tag": "",
+    "image_path": "../assets/shop/6.jpg",
+    "name": "台東熱氣球嘉年華",
+    "price": 785,
+    "location": "台東縣鹿野鄉高台路",
+    "coordinates": {
+      "latitude": 22.912658,
+      "longitude": 121.126354
+    },
+    "highlights": [
+      "免費早餐",
+      "探索當地美食",
+      "完善的設施",
+      "鄰近國家公園"
+    ],
+    "description": [
+      {
+        "text": "提供壯觀的城市全景。",
+        "image_path": "../assets/shop/6_highlight1.jpg"
+      },
+      {
+        "text": "拍照打卡熱點，適合旅遊紀錄。",
+        "image_path": "../assets/shop/6_highlight2.jpg"
+      },
+      {
+        "text": "每天提供免費早餐。",
+        "image_path": "../assets/shop/6_highlight3.jpg"
+      }
+    ],
+    "options": [
+      {
+        "option_name": "親子方案",
+        "summary": "適合全家出遊，內容豐富",
+        "option_price": 1191
+      },
+      {
+        "option_name": "標準方案",
+        "summary": "基本服務，適合初次體驗者",
+        "option_price": 1358
+      },
+      {
+        "option_name": "豪華方案",
+        "summary": "包含額外服務，提升您的體驗",
+        "option_price": 1517
+      }
+    ],
+    "productID": "travel_6"
+  },
+  {
+    "id": 8,
+    "category": "旅遊體驗",
+    "tag": "hot",
+    "image_path": "../assets/shop/8.jpg",
+    "name": "花蓮海景民宿",
+    "price": 3786,
+    "location": "花蓮縣花蓮市海濱路100號",
+    "coordinates": {
+      "latitude": 23.987158,
+      "longitude": 121.601571
+    },
+    "highlights": [
+      "特色文化活動",
+      "免費早餐",
+      "適合全家同樂",
+      "親近大自然"
+    ],
+    "description": [
+      {
+        "text": "拍照打卡熱點，適合旅遊紀錄。",
+        "image_path": "../assets/shop/8_highlight1.jpg"
+      },
+      {
+        "text": "每天提供免費早餐。",
+        "image_path": "../assets/shop/8_highlight2.jpg"
+      },
+      {
+        "text": "讓您享受獨特的放鬆時光。",
+        "image_path": "../assets/shop/8_highlight3.jpg"
+      }
+    ],
+    "options": [
+      {
+        "option_name": "早鳥優惠",
+        "summary": "提早預訂享受特惠價格",
+        "option_price": 4059
+      },
+      {
+        "option_name": "標準方案",
+        "summary": "基本服務，適合初次體驗者",
+        "option_price": 4553
+      },
+      {
+        "option_name": "豪華方案",
+        "summary": "包含額外服務，提升您的體驗",
+        "option_price": 4743
+      }
+    ],
+    "productID": "travel_8"
+  },
+  {
+    "id": 16,
+    "category": "一日遊",
+    "tag": "twTravelerCard",
+    "image_path": "../assets/shop/16.jpg",
+    "name": "台北101觀景台門票",
+    "price": 2400,
+    "location": "台北市信義區信義路五段7號",
+    "coordinates": {
+      "latitude": 25.033964,
+      "longitude": 121.564468
+    },
+    "highlights": [
+      "高速電梯體驗",
+      "豐富的自然生態",
+      "舒適的住宿環境",
+      "適合全家同樂",
+      "免費早餐"
+    ],
+    "description": [
+      {
+        "text": "拍照打卡熱點，適合旅遊紀錄。",
+        "image_path": "../assets/shop/16_highlight1.jpg"
+      },
+      {
+        "text": "提供壯觀的城市全景。",
+        "image_path": "../assets/shop/16_highlight2.jpg"
+      },
+      {
+        "text": "每天提供免費早餐。",
+        "image_path": "../assets/shop/16_highlight3.jpg"
+      }
+    ],
+    "options": [
+      {
+        "option_name": "標準方案",
+        "summary": "基本服務，適合初次體驗者",
+        "option_price": 2684
+      },
+      {
+        "option_name": "豪華方案",
+        "summary": "包含額外服務，提升您的體驗",
+        "option_price": 2797
+      },
+      {
+        "option_name": "親子方案",
+        "summary": "適合全家出遊，內容豐富",
+        "option_price": 2796
+      }
+    ],
+    "productID": "travel_16"
+  },
+  {
+    "id": 9,
+    "productID": "travel_9",
+    "category": "一日遊",
+    "tag": "twTravelerCard",
+    "image_path": "../assets/shop/9.jpg",
+    "name": "活動體驗_9",
+    "price": 4665,
+    "location": "台灣各地活動地點",
+    "coordinates": {
+      "latitude": 23.5,
+      "longitude": 121.0
+    },
+    "highlights": [
+      "新活動亮點",
+      "多元文化體驗",
+      "專業導覽服務"
+    ],
+    "description": [
+      {
+        "text": "豐富活動內容，適合全家同樂",
+        "image_path": "../assets/shop/9_highlight1.jpg"
+      },
+      {
+        "text": "絕美風景盡收眼底",
+        "image_path": "../assets/shop/9_highlight2.jpg"
+      }
+    ],
+    "options": [
+      {
+        "option_name": "標準方案",
+        "summary": "基本活動體驗",
+        "option_price": 3906
+      },
+      {
+        "option_name": "豪華方案",
+        "summary": "包含導覽和餐飲",
+        "option_price": 3725
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "productID": "travel_10",
+    "category": "一日遊",
+    "tag": "twTravelerCard",
+    "image_path": "../assets/shop/10.jpg",
+    "name": "活動體驗_10",
+    "price": 1846,
+    "location": "台灣各地活動地點",
+    "coordinates": {
+      "latitude": 23.5,
+      "longitude": 121.0
+    },
+    "highlights": [
+      "新活動亮點",
+      "多元文化體驗",
+      "專業導覽服務"
+    ],
+    "description": [
+      {
+        "text": "豐富活動內容，適合全家同樂",
+        "image_path": "../assets/shop/10_highlight1.jpg"
+      },
+      {
+        "text": "絕美風景盡收眼底",
+        "image_path": "../assets/shop/10_highlight2.jpg"
+      }
+    ],
+    "options": [
+      {
+        "option_name": "標準方案",
+        "summary": "基本活動體驗",
+        "option_price": 2437
+      },
+      {
+        "option_name": "豪華方案",
+        "summary": "包含導覽和餐飲",
+        "option_price": 4236
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "productID": "travel_11",
+    "category": "一日遊",
+    "tag": "twTravelerCard",
+    "image_path": "../assets/shop/11.jpg",
+    "name": "活動體驗_11",
+    "price": 4140,
+    "location": "台灣各地活動地點",
+    "coordinates": {
+      "latitude": 23.5,
+      "longitude": 121.0
+    },
+    "highlights": [
+      "新活動亮點",
+      "多元文化體驗",
+      "專業導覽服務"
+    ],
+    "description": [
+      {
+        "text": "豐富活動內容，適合全家同樂",
+        "image_path": "../assets/shop/11_highlight1.jpg"
+      },
+      {
+        "text": "絕美風景盡收眼底",
+        "image_path": "../assets/shop/11_highlight2.jpg"
+      }
+    ],
+    "options": [
+      {
+        "option_name": "標準方案",
+        "summary": "基本活動體驗",
+        "option_price": 3377
+      },
+      {
+        "option_name": "豪華方案",
+        "summary": "包含導覽和餐飲",
+        "option_price": 986
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "productID": "travel_12",
+    "category": "住宿",
+    "tag": "hot",
+    "image_path": "../assets/shop/12.jpg",
+    "name": "活動體驗_12",
+    "price": 3075,
+    "location": "台灣各地活動地點",
+    "coordinates": {
+      "latitude": 23.5,
+      "longitude": 121.0
+    },
+    "highlights": [
+      "新活動亮點",
+      "多元文化體驗",
+      "專業導覽服務"
+    ],
+    "description": [
+      {
+        "text": "豐富活動內容，適合全家同樂",
+        "image_path": "../assets/shop/12_highlight1.jpg"
+      },
+      {
+        "text": "絕美風景盡收眼底",
+        "image_path": "../assets/shop/12_highlight2.jpg"
+      }
+    ],
+    "options": [
+      {
+        "option_name": "標準方案",
+        "summary": "基本活動體驗",
+        "option_price": 3951
+      },
+      {
+        "option_name": "豪華方案",
+        "summary": "包含導覽和餐飲",
+        "option_price": 4246
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "productID": "travel_13",
+    "category": "一日遊",
+    "tag": "",
+    "image_path": "../assets/shop/13.jpg",
+    "name": "活動體驗_13",
+    "price": 2241,
+    "location": "台灣各地活動地點",
+    "coordinates": {
+      "latitude": 23.5,
+      "longitude": 121.0
+    },
+    "highlights": [
+      "新活動亮點",
+      "多元文化體驗",
+      "專業導覽服務"
+    ],
+    "description": [
+      {
+        "text": "豐富活動內容，適合全家同樂",
+        "image_path": "../assets/shop/13_highlight1.jpg"
+      },
+      {
+        "text": "絕美風景盡收眼底",
+        "image_path": "../assets/shop/13_highlight2.jpg"
+      }
+    ],
+    "options": [
+      {
+        "option_name": "標準方案",
+        "summary": "基本活動體驗",
+        "option_price": 4403
+      },
+      {
+        "option_name": "豪華方案",
+        "summary": "包含導覽和餐飲",
+        "option_price": 2313
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "productID": "travel_14",
+    "category": "一日遊",
+    "tag": "hot",
+    "image_path": "../assets/shop/14.jpg",
+    "name": "活動體驗_14",
+    "price": 3722,
+    "location": "台灣各地活動地點",
+    "coordinates": {
+      "latitude": 23.5,
+      "longitude": 121.0
+    },
+    "highlights": [
+      "新活動亮點",
+      "多元文化體驗",
+      "專業導覽服務"
+    ],
+    "description": [
+      {
+        "text": "豐富活動內容，適合全家同樂",
+        "image_path": "../assets/shop/14_highlight1.jpg"
+      },
+      {
+        "text": "絕美風景盡收眼底",
+        "image_path": "../assets/shop/14_highlight2.jpg"
+      }
+    ],
+    "options": [
+      {
+        "option_name": "標準方案",
+        "summary": "基本活動體驗",
+        "option_price": 1372
+      },
+      {
+        "option_name": "豪華方案",
+        "summary": "包含導覽和餐飲",
+        "option_price": 996
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "productID": "travel_15",
+    "category": "旅遊體驗",
+    "tag": "hot",
+    "image_path": "../assets/shop/15.jpg",
+    "name": "活動體驗_15",
+    "price": 329,
+    "location": "台灣各地活動地點",
+    "coordinates": {
+      "latitude": 23.5,
+      "longitude": 121.0
+    },
+    "highlights": [
+      "新活動亮點",
+      "多元文化體驗",
+      "專業導覽服務"
+    ],
+    "description": [
+      {
+        "text": "豐富活動內容，適合全家同樂",
+        "image_path": "../assets/shop/15_highlight1.jpg"
+      },
+      {
+        "text": "絕美風景盡收眼底",
+        "image_path": "../assets/shop/15_highlight2.jpg"
+      }
+    ],
+    "options": [
+      {
+        "option_name": "標準方案",
+        "summary": "基本活動體驗",
+        "option_price": 2563
+      },
+      {
+        "option_name": "豪華方案",
+        "summary": "包含導覽和餐飲",
+        "option_price": 4392
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "productID": "travel_16",
+    "category": "票券",
+    "tag": "hot",
+    "image_path": "../assets/shop/16.jpg",
+    "name": "活動體驗_16",
+    "price": 2843,
+    "location": "台灣各地活動地點",
+    "coordinates": {
+      "latitude": 23.5,
+      "longitude": 121.0
+    },
+    "highlights": [
+      "新活動亮點",
+      "多元文化體驗",
+      "專業導覽服務"
+    ],
+    "description": [
+      {
+        "text": "豐富活動內容，適合全家同樂",
+        "image_path": "../assets/shop/16_highlight1.jpg"
+      },
+      {
+        "text": "絕美風景盡收眼底",
+        "image_path": "../assets/shop/16_highlight2.jpg"
+      }
+    ],
+    "options": [
+      {
+        "option_name": "標準方案",
+        "summary": "基本活動體驗",
+        "option_price": 1919
+      },
+      {
+        "option_name": "豪華方案",
+        "summary": "包含導覽和餐飲",
+        "option_price": 4770
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "productID": "travel_17",
+    "category": "一日遊",
+    "tag": "twTravelerCard",
+    "image_path": "../assets/shop/17.jpg",
+    "name": "活動體驗_17",
+    "price": 4403,
+    "location": "台灣各地活動地點",
+    "coordinates": {
+      "latitude": 23.5,
+      "longitude": 121.0
+    },
+    "highlights": [
+      "新活動亮點",
+      "多元文化體驗",
+      "專業導覽服務"
+    ],
+    "description": [
+      {
+        "text": "豐富活動內容，適合全家同樂",
+        "image_path": "../assets/shop/17_highlight1.jpg"
+      },
+      {
+        "text": "絕美風景盡收眼底",
+        "image_path": "../assets/shop/17_highlight2.jpg"
+      }
+    ],
+    "options": [
+      {
+        "option_name": "標準方案",
+        "summary": "基本活動體驗",
+        "option_price": 4479
+      },
+      {
+        "option_name": "豪華方案",
+        "summary": "包含導覽和餐飲",
+        "option_price": 2230
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "productID": "travel_18",
+    "category": "一日遊",
+    "tag": "",
+    "image_path": "../assets/shop/18.jpg",
+    "name": "活動體驗_18",
+    "price": 597,
+    "location": "台灣各地活動地點",
+    "coordinates": {
+      "latitude": 23.5,
+      "longitude": 121.0
+    },
+    "highlights": [
+      "新活動亮點",
+      "多元文化體驗",
+      "專業導覽服務"
+    ],
+    "description": [
+      {
+        "text": "豐富活動內容，適合全家同樂",
+        "image_path": "../assets/shop/18_highlight1.jpg"
+      },
+      {
+        "text": "絕美風景盡收眼底",
+        "image_path": "../assets/shop/18_highlight2.jpg"
+      }
+    ],
+    "options": [
+      {
+        "option_name": "標準方案",
+        "summary": "基本活動體驗",
+        "option_price": 1973
+      },
+      {
+        "option_name": "豪華方案",
+        "summary": "包含導覽和餐飲",
+        "option_price": 536
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "productID": "travel_19",
+    "category": "票券",
+    "tag": "hot",
+    "image_path": "../assets/shop/19.jpg",
+    "name": "活動體驗_19",
+    "price": 1920,
+    "location": "台灣各地活動地點",
+    "coordinates": {
+      "latitude": 23.5,
+      "longitude": 121.0
+    },
+    "highlights": [
+      "新活動亮點",
+      "多元文化體驗",
+      "專業導覽服務"
+    ],
+    "description": [
+      {
+        "text": "豐富活動內容，適合全家同樂",
+        "image_path": "../assets/shop/19_highlight1.jpg"
+      },
+      {
+        "text": "絕美風景盡收眼底",
+        "image_path": "../assets/shop/19_highlight2.jpg"
+      }
+    ],
+    "options": [
+      {
+        "option_name": "標準方案",
+        "summary": "基本活動體驗",
+        "option_price": 3994
+      },
+      {
+        "option_name": "豪華方案",
+        "summary": "包含導覽和餐飲",
+        "option_price": 4501
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "productID": "travel_20",
+    "category": "票券",
+    "tag": "hot",
+    "image_path": "../assets/shop/20.jpg",
+    "name": "活動體驗_20",
+    "price": 2491,
+    "location": "台灣各地活動地點",
+    "coordinates": {
+      "latitude": 23.5,
+      "longitude": 121.0
+    },
+    "highlights": [
+      "新活動亮點",
+      "多元文化體驗",
+      "專業導覽服務"
+    ],
+    "description": [
+      {
+        "text": "豐富活動內容，適合全家同樂",
+        "image_path": "../assets/shop/20_highlight1.jpg"
+      },
+      {
+        "text": "絕美風景盡收眼底",
+        "image_path": "../assets/shop/20_highlight2.jpg"
+      }
+    ],
+    "options": [
+      {
+        "option_name": "標準方案",
+        "summary": "基本活動體驗",
+        "option_price": 4388
+      },
+      {
+        "option_name": "豪華方案",
+        "summary": "包含導覽和餐飲",
+        "option_price": 692
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "productID": "travel_21",
+    "category": "住宿",
+    "tag": "twTravelerCard",
+    "image_path": "../assets/shop/21.jpg",
+    "name": "活動體驗_21",
+    "price": 3216,
+    "location": "台灣各地活動地點",
+    "coordinates": {
+      "latitude": 23.5,
+      "longitude": 121.0
+    },
+    "highlights": [
+      "新活動亮點",
+      "多元文化體驗",
+      "專業導覽服務"
+    ],
+    "description": [
+      {
+        "text": "豐富活動內容，適合全家同樂",
+        "image_path": "../assets/shop/21_highlight1.jpg"
+      },
+      {
+        "text": "絕美風景盡收眼底",
+        "image_path": "../assets/shop/21_highlight2.jpg"
+      }
+    ],
+    "options": [
+      {
+        "option_name": "標準方案",
+        "summary": "基本活動體驗",
+        "option_price": 520
+      },
+      {
+        "option_name": "豪華方案",
+        "summary": "包含導覽和餐飲",
+        "option_price": 4981
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "productID": "travel_22",
+    "category": "票券",
+    "tag": "hot",
+    "image_path": "../assets/shop/22.jpg",
+    "name": "活動體驗_22",
+    "price": 4448,
+    "location": "台灣各地活動地點",
+    "coordinates": {
+      "latitude": 23.5,
+      "longitude": 121.0
+    },
+    "highlights": [
+      "新活動亮點",
+      "多元文化體驗",
+      "專業導覽服務"
+    ],
+    "description": [
+      {
+        "text": "豐富活動內容，適合全家同樂",
+        "image_path": "../assets/shop/22_highlight1.jpg"
+      },
+      {
+        "text": "絕美風景盡收眼底",
+        "image_path": "../assets/shop/22_highlight2.jpg"
+      }
+    ],
+    "options": [
+      {
+        "option_name": "標準方案",
+        "summary": "基本活動體驗",
+        "option_price": 2117
+      },
+      {
+        "option_name": "豪華方案",
+        "summary": "包含導覽和餐飲",
+        "option_price": 2526
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "productID": "travel_23",
+    "category": "一日遊",
+    "tag": "hot",
+    "image_path": "../assets/shop/23.jpg",
+    "name": "活動體驗_23",
+    "price": 4673,
+    "location": "台灣各地活動地點",
+    "coordinates": {
+      "latitude": 23.5,
+      "longitude": 121.0
+    },
+    "highlights": [
+      "新活動亮點",
+      "多元文化體驗",
+      "專業導覽服務"
+    ],
+    "description": [
+      {
+        "text": "豐富活動內容，適合全家同樂",
+        "image_path": "../assets/shop/23_highlight1.jpg"
+      },
+      {
+        "text": "絕美風景盡收眼底",
+        "image_path": "../assets/shop/23_highlight2.jpg"
+      }
+    ],
+    "options": [
+      {
+        "option_name": "標準方案",
+        "summary": "基本活動體驗",
+        "option_price": 4313
+      },
+      {
+        "option_name": "豪華方案",
+        "summary": "包含導覽和餐飲",
+        "option_price": 1212
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "productID": "travel_24",
+    "category": "住宿",
+    "tag": "hot",
+    "image_path": "../assets/shop/24.jpg",
+    "name": "活動體驗_24",
+    "price": 357,
+    "location": "台灣各地活動地點",
+    "coordinates": {
+      "latitude": 23.5,
+      "longitude": 121.0
+    },
+    "highlights": [
+      "新活動亮點",
+      "多元文化體驗",
+      "專業導覽服務"
+    ],
+    "description": [
+      {
+        "text": "豐富活動內容，適合全家同樂",
+        "image_path": "../assets/shop/24_highlight1.jpg"
+      },
+      {
+        "text": "絕美風景盡收眼底",
+        "image_path": "../assets/shop/24_highlight2.jpg"
+      }
+    ],
+    "options": [
+      {
+        "option_name": "標準方案",
+        "summary": "基本活動體驗",
+        "option_price": 1045
+      },
+      {
+        "option_name": "豪華方案",
+        "summary": "包含導覽和餐飲",
+        "option_price": 446
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "productID": "travel_25",
+    "category": "旅遊體驗",
+    "tag": "",
+    "image_path": "../assets/shop/25.jpg",
+    "name": "活動體驗_25",
+    "price": 4975,
+    "location": "台灣各地活動地點",
+    "coordinates": {
+      "latitude": 23.5,
+      "longitude": 121.0
+    },
+    "highlights": [
+      "新活動亮點",
+      "多元文化體驗",
+      "專業導覽服務"
+    ],
+    "description": [
+      {
+        "text": "豐富活動內容，適合全家同樂",
+        "image_path": "../assets/shop/25_highlight1.jpg"
+      },
+      {
+        "text": "絕美風景盡收眼底",
+        "image_path": "../assets/shop/25_highlight2.jpg"
+      }
+    ],
+    "options": [
+      {
+        "option_name": "標準方案",
+        "summary": "基本活動體驗",
+        "option_price": 1019
+      },
+      {
+        "option_name": "豪華方案",
+        "summary": "包含導覽和餐飲",
+        "option_price": 1299
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "productID": "travel_26",
+    "category": "旅遊體驗",
+    "tag": "hot",
+    "image_path": "../assets/shop/26.jpg",
+    "name": "活動體驗_26",
+    "price": 4218,
+    "location": "台灣各地活動地點",
+    "coordinates": {
+      "latitude": 23.5,
+      "longitude": 121.0
+    },
+    "highlights": [
+      "新活動亮點",
+      "多元文化體驗",
+      "專業導覽服務"
+    ],
+    "description": [
+      {
+        "text": "豐富活動內容，適合全家同樂",
+        "image_path": "../assets/shop/26_highlight1.jpg"
+      },
+      {
+        "text": "絕美風景盡收眼底",
+        "image_path": "../assets/shop/26_highlight2.jpg"
+      }
+    ],
+    "options": [
+      {
+        "option_name": "標準方案",
+        "summary": "基本活動體驗",
+        "option_price": 3053
+      },
+      {
+        "option_name": "豪華方案",
+        "summary": "包含導覽和餐飲",
+        "option_price": 2476
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "productID": "travel_27",
+    "category": "住宿",
+    "tag": "twTravelerCard",
+    "image_path": "../assets/shop/27.jpg",
+    "name": "活動體驗_27",
+    "price": 4648,
+    "location": "台灣各地活動地點",
+    "coordinates": {
+      "latitude": 23.5,
+      "longitude": 121.0
+    },
+    "highlights": [
+      "新活動亮點",
+      "多元文化體驗",
+      "專業導覽服務"
+    ],
+    "description": [
+      {
+        "text": "豐富活動內容，適合全家同樂",
+        "image_path": "../assets/shop/27_highlight1.jpg"
+      },
+      {
+        "text": "絕美風景盡收眼底",
+        "image_path": "../assets/shop/27_highlight2.jpg"
+      }
+    ],
+    "options": [
+      {
+        "option_name": "標準方案",
+        "summary": "基本活動體驗",
+        "option_price": 551
+      },
+      {
+        "option_name": "豪華方案",
+        "summary": "包含導覽和餐飲",
+        "option_price": 3317
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "productID": "travel_28",
+    "category": "一日遊",
+    "tag": "",
+    "image_path": "../assets/shop/28.jpg",
+    "name": "活動體驗_28",
+    "price": 3737,
+    "location": "台灣各地活動地點",
+    "coordinates": {
+      "latitude": 23.5,
+      "longitude": 121.0
+    },
+    "highlights": [
+      "新活動亮點",
+      "多元文化體驗",
+      "專業導覽服務"
+    ],
+    "description": [
+      {
+        "text": "豐富活動內容，適合全家同樂",
+        "image_path": "../assets/shop/28_highlight1.jpg"
+      },
+      {
+        "text": "絕美風景盡收眼底",
+        "image_path": "../assets/shop/28_highlight2.jpg"
+      }
+    ],
+    "options": [
+      {
+        "option_name": "標準方案",
+        "summary": "基本活動體驗",
+        "option_price": 3745
+      },
+      {
+        "option_name": "豪華方案",
+        "summary": "包含導覽和餐飲",
+        "option_price": 4565
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "productID": "travel_29",
+    "category": "票券",
+    "tag": "hot",
+    "image_path": "../assets/shop/29.jpg",
+    "name": "活動體驗_29",
+    "price": 4831,
+    "location": "台灣各地活動地點",
+    "coordinates": {
+      "latitude": 23.5,
+      "longitude": 121.0
+    },
+    "highlights": [
+      "新活動亮點",
+      "多元文化體驗",
+      "專業導覽服務"
+    ],
+    "description": [
+      {
+        "text": "豐富活動內容，適合全家同樂",
+        "image_path": "../assets/shop/29_highlight1.jpg"
+      },
+      {
+        "text": "絕美風景盡收眼底",
+        "image_path": "../assets/shop/29_highlight2.jpg"
+      }
+    ],
+    "options": [
+      {
+        "option_name": "標準方案",
+        "summary": "基本活動體驗",
+        "option_price": 2362
+      },
+      {
+        "option_name": "豪華方案",
+        "summary": "包含導覽和餐飲",
+        "option_price": 2909
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "productID": "travel_30",
+    "category": "旅遊體驗",
+    "tag": "hot",
+    "image_path": "../assets/shop/30.jpg",
+    "name": "活動體驗_30",
+    "price": 1753,
+    "location": "台灣各地活動地點",
+    "coordinates": {
+      "latitude": 23.5,
+      "longitude": 121.0
+    },
+    "highlights": [
+      "新活動亮點",
+      "多元文化體驗",
+      "專業導覽服務"
+    ],
+    "description": [
+      {
+        "text": "豐富活動內容，適合全家同樂",
+        "image_path": "../assets/shop/30_highlight1.jpg"
+      },
+      {
+        "text": "絕美風景盡收眼底",
+        "image_path": "../assets/shop/30_highlight2.jpg"
+      }
+    ],
+    "options": [
+      {
+        "option_name": "標準方案",
+        "summary": "基本活動體驗",
+        "option_price": 962
+      },
+      {
+        "option_name": "豪華方案",
+        "summary": "包含導覽和餐飲",
+        "option_price": 801
+      }
+    ]
+  }
+]

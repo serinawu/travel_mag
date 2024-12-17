@@ -1,0 +1,13 @@
+.loginSignup_page {
+  overflow-y: hidden;
+  display: none; // 預設隱藏
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.5s ease-in-out;
+
+  &.active {
+    display: flex;
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

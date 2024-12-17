@@ -1,0 +1,121 @@
+.checkout_page {
+
+   .pay-details {
+        form {
+
+            #shippingFee {
+                
+                &::before {
+                    content: "運費 $";
+                    font-weight: lighter;
+                }
+            }
+
+            .bi-credit {
+                left: 20px !important;
+            }
+            
+            
+        }
+   }
+   //TODO 平板/手機版
+   .list-total {
+    height: 100vh;
+    position: fixed;
+    top: $header;
+    left: unset;
+    right: 0;
+
+    ul {
+
+        &>li{
+
+            &:last-child {
+                margin-bottom: 0 !important;
+            }
+        }
+
+        #travel-count,
+        #magazine-count {
+
+            &::before {
+                content: '(';
+            }
+            &::after {
+                content: ')';
+            }
+        }
+
+        .card {
+
+            .cart-img {
+                width: 90px;
+                min-height: unset;
+                height: 90px;
+                margin: auto 0 auto 20px;
+            }
+
+            #cart-itemCount {
+                color: $white !important;
+                padding: 1.5px 5px 3.5px 5px !important;
+                top: 5px;
+                left: 100px
+            }
+
+            .card-body {
+                
+                .card-text {
+                    @include multiline-ellipsis;
+                    width: 100%;
+                    -webkit-line-clamp: 3;
+                    line-clamp: 3;
+                }
+
+                #edit-items {
+                    left: unset;
+                    right: 1rem;
+                    top: 1rem;
+                }
+            }
+        }
+    }
+
+        #totalTitle {
+            position: relative;
+
+            &::before {
+                content: "";
+                width: 40%;
+                height: 0.8px;
+                background: black;
+                position: absolute;
+                top: 50%;
+                left: unset;
+                right: 0;
+                transform: translateY(-50%);
+            }
+
+            &::after{
+                content: "";
+                width: 40%;
+                height: 0.8px;
+                background: black;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+            }
+        }
+
+        #inputDiscount {
+            height: 55px;
+        }
+
+        #inputDiscount-Btn {
+            top: 50%;
+            left: unset;
+            right: 15px;
+            transform: translateY(-50%);
+        }
+   }
+}

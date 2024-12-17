@@ -1,0 +1,596 @@
+.home_page {
+  width: 100vw !important;
+
+  .straight-line {
+    width: 1.5px;
+    height: 1100px;
+    background: linear-gradient($white 10%, #000000 100%);
+    position: absolute;
+    top: 65vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 6;
+  }
+
+  & > section {
+    height: calc(100vh - $header);
+    align-content: center;
+    overflow: hidden !important;
+
+    &.hero {
+      position: relative;
+      // height: 300vh;
+      border-bottom: 1px solid black;
+
+      .hero-container {
+        width: 100vw;
+        height: 100vh;
+
+        // z-index: 4;
+
+        & > img {
+          width: inherit;
+          height: inherit;
+          object-fit: cover;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          // position: sticky;
+          top: 0;
+          transform: translateX(-50%);
+          // opacity: 0;
+          z-index: 1;
+
+          &.hero-1 {
+            z-index: 1;
+          }
+
+          &.hero-2 {
+            z-index: 2;
+          }
+
+          &.hero-3 {
+            z-index: 3;
+          }
+        }
+
+        .text-group {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background: linear-gradient(#0000007f 0%, transparent 100%);
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 5;
+
+          h1 {
+            font-size: 6rem;
+          }
+
+          p {
+            font-size: 2rem !important;
+          }
+        }
+      }
+    }
+
+    &.magazine-section {
+      .magazine-container {
+        display: flex;
+        align-items: center;
+
+        .tableOFcontent {
+          & > .card {
+            display: none;
+            border: none;
+            transition: all 0.3s;
+
+            &.active {
+              display: block;
+            }
+
+            .card-title {
+              font-weight: bold;
+              border-bottom: 1px solid $secondary;
+              margin-bottom: 3;
+              // text-align: center;
+              padding-bottom: 1rem;
+            }
+
+            .card-text {
+              max-height: 300px;
+              display: flex;
+              flex-direction: column;
+              flex-wrap: wrap;
+              padding: 10px 0;
+
+              li {
+                span {
+                  display: block;
+                  font-weight: bold;
+                  margin: 1rem 0;
+                }
+              }
+            }
+          }
+        }
+
+        .magazine-images {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 1rem; /* 控制圖片間的間距 */
+
+          .latest-mag {
+            flex: 1; /* 使圖片在容器中均分空間 */
+            transition: all 0.3s ease-in-out;
+            transform-origin: center;
+
+            &:hover,
+            &.active {
+              order: -1; /* 排序至最前 */
+              flex: 2; /* 放大比例 */
+              transform: scale(1.2); /* 放大效果 */
+              z-index: 10; /* 確保位於最上層 */
+            }
+          }
+        }
+
+        .lasts-magazine {
+          height: 100% !important;
+          align-items: center;
+
+          .latest-mag {
+            width: 45%;
+            height: auto;
+            object-fit: contain;
+            filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+            transition: all 0.3s;
+
+            &:hover {
+              transform: scale(1.05);
+            }
+
+            &:nth-of-type(1) {
+              width: 45%;
+            }
+            &:nth-of-type(2) {
+              width: 35%;
+              margin-left: -10%;
+            }
+            &:nth-of-type(3) {
+              width: 25%;
+              margin-left: -10%;
+            }
+          }
+        }
+      }
+    }
+
+    &.events-section {
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+      align-content: space-between !important;
+
+      & > .event-container {
+        height: 100%;
+
+        .event-menu {
+          width: 30%;
+          border-right: 1px solid black;
+
+          .text-group {
+            & > span {
+              display: none;
+
+              &.active {
+                display: flex;
+              }
+            }
+          }
+
+          .category-list {
+            & > li {
+              border-bottom: 1px solid black;
+              cursor: pointer;
+
+              p {
+                padding-top: 3px;
+                font-size: 20px;
+              }
+
+              i {
+                transition: all 0.3s;
+              }
+
+              &.active {
+                background: $primary;
+
+                p {
+                  color: $white;
+                  font-weight: bold;
+                }
+
+                i {
+                  color: $white;
+                }
+              }
+
+              &:hover {
+                i {
+                  transform: translateX(30%);
+                }
+              }
+
+              &:last-child {
+                border-bottom: none;
+              }
+            }
+          }
+        }
+
+        & > .content {
+          width: 70%;
+          height: 100% !important;
+          overflow-x: hidden;
+
+          .outer_swiper,
+          .inner_swiper {
+            width: 100%;
+            height: 100% !important;
+            overflow-x: hidden;
+
+            .swiper-wrapper {
+              width: 100%;
+
+              .swiper-slide {
+                width: 100%;
+                height: 100%;
+                overflow-x: hidden;
+              }
+
+              .inner-prev-1,
+              .inner-next-1 {
+                width: 30px;
+                height: 30px;
+                font-size: 2rem;
+                color: #000000;
+                position: absolute;
+                top: unset;
+                left: unset;
+                right: 20px;
+                bottom: 20px;
+                transition: all 0.3s;
+
+                &::after {
+                  display: none;
+                }
+
+                &:hover {
+                  color: $primary;
+                }
+              }
+
+              .inner-prev-1 {
+                bottom: 60px;
+              }
+            }
+          }
+
+          // .outer_swiper {
+
+          //     &>.swiper-wrapper {
+
+          //         &>.swiper-slide {
+          //             display: none;
+
+          //             &.display {
+          //                 display: flex;
+          //             }
+          //         }
+          //     }
+          // }
+        }
+      }
+    }
+
+    &.foodie-section {
+      align-content: unset;
+
+      .foodie-titleArea {
+        position: relative;
+
+        &::before {
+          content: "";
+          width: 95%;
+          height: 1px;
+          background: black;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+
+        .editor-recommend {
+          width: 36%;
+          padding-right: 50px;
+          position: relative;
+
+          .sub-title {
+            background: #268d56;
+            color: $white;
+          }
+
+          p {
+            line-height: 1.2rem;
+          }
+
+          .slash {
+            width: 1px;
+            height: 100%;
+            background: black;
+            position: absolute;
+            top: 50%;
+            left: unset;
+            right: 4%;
+            transform: rotate(35deg) translateY(-50%);
+          }
+        }
+      }
+
+      .place {
+        width: 60%;
+
+        .food-type {
+          background: transparent;
+
+          p {
+            font-weight: bolder;
+          }
+
+          &.active {
+            p {
+              background: yellow;
+            }
+          }
+        }
+
+        .place-list {
+          p {
+            line-height: 2rem;
+            padding-right: 1rem;
+            position: relative;
+            cursor: pointer;
+
+            &:last-child {
+              &::before {
+                display: none;
+              }
+            }
+
+            &:hover {
+              color: $primary;
+              font-weight: bold;
+
+              &::before {
+                color: black;
+              }
+            }
+
+            &::before {
+              content: "/";
+              position: absolute;
+              left: unset;
+              right: 0.4rem;
+            }
+          }
+        }
+      }
+
+      .foodie-container {
+        .rank {
+          width: 33%;
+          height: 550px;
+          transition: all 0.3s;
+          // object-fit: contain;
+          // background-size: 100;
+          // background-position: 50% 50%;
+
+          .sort {
+            font-size: 2rem;
+            font-weight: bold;
+            top: 10px;
+            right: 10px;
+            z-index: 7;
+          }
+
+          .info-layer {
+            width: 100%;
+            height: 100%;
+            background: #0000003f;
+            color: $white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            transition: all 0.3s;
+            z-index: 6;
+
+            .name {
+              font-size: 1.25rem;
+              font-weight: bold;
+            }
+
+            .recommend-list {
+              p {
+                &::after {
+                  content: "/";
+                }
+
+                &:last-child {
+                  &::after {
+                    display: none;
+                  }
+                }
+              }
+            }
+          }
+
+          .rank-card {
+            width: 100%;
+            height: 100%;
+
+            img {
+              width: 100%;
+              object-fit: contain;
+            }
+          }
+
+          &:hover {
+            width: 50%;
+
+            .sort {
+              color: $white;
+            }
+
+            .info-layer {
+              opacity: 1;
+            }
+          }
+
+          // &:nth-of-type(1) {
+
+          // }
+          &:nth-of-type(2),
+          &:nth-of-type(3) {
+            .info-layer {
+              padding: 45px;
+            }
+          }
+          // &:nth-of-type(3) {
+          //     background: url('../../assets/recommend/recommend_3.png');
+          // }
+        }
+      }
+    }
+
+    &.cafeShop-section {
+      // height: 100vh;
+
+      .swiper {
+        .swiper-wrapper {
+          .swiper-slide {
+            display: flex;
+            background-color: #f5f5f5;
+            height: 100% !important;
+
+            .environment-pic {
+              left: 27rem;
+            }
+
+            .square-pic {
+              top: 3rem;
+              left: 3rem;
+            }
+
+            .shop-info {
+              width: 350px;
+              background: #e3dfc8;
+              top: 27rem;
+              left: 3rem;
+            }
+
+            .cafe-tour {
+              background: #9d2d2d;
+              color: $white;
+              writing-mode: vertical-rl;
+              text-orientation: mixed;
+              left: unset;
+              top: 3rem;
+              right: 3rem;
+            }
+
+            .cafe-name {
+              writing-mode: vertical-rl;
+              text-orientation: mixed;
+              font-weight: lighter;
+              left: unset;
+              top: 3rem;
+              right: 5.5rem;
+            }
+
+            .cafe-intro {
+              width: 300px;
+              font-weight: lighter;
+              line-height: 1.4rem;
+              left: unset;
+              top: unset;
+              bottom: 5rem;
+              right: 5.5rem;
+            }
+          }
+
+          .store-prev {
+            width: 2rem;
+            height: 2rem;
+            position: absolute;
+            left: unset;
+            top: unset;
+            bottom: 5rem;
+            right: 5.5rem;
+          }
+        }
+      }
+    }
+
+    &.street-section {
+      flex-shrink: 1;
+      overflow-x: scroll;
+      // height: 100vh;
+      align-content: unset;
+
+      .street-pic-row {
+        width: auto;
+        display: flex;
+        align-items: flex-end;
+        gap: 5px;
+
+        img {
+          height: auto;
+          width: 300px;
+          object-fit: cover;
+          flex-grow: 1;
+          transition: all 0.3s;
+
+          &:hover {
+            scale: 1.1;
+          }
+        }
+      }
+    }
+  }
+  .swiper {
+    height: 100%; /* Swiper 滿足父容器 */
+  }
+
+  .swiper-wrapper {
+    height: 100%; /* Wrapper 高度繼承 */
+  }
+
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 可選：內容居中 */
+    justify-content: center;
+    height: 100%; /* 確保 Slide 高度滿足父容器 */
+  }
+}

@@ -1,0 +1,154 @@
+.plan_page {
+    //TODO 日夜切換有問題
+    //TODO RWD待調
+
+    &>.row {
+        height: 100vh !important;
+        flex-shrink: 0;
+
+        #plan-tool {
+            min-width: 45px;
+            margin-top: $header;
+
+            .tool-Btn {
+                position: relative;
+                cursor: pointer;
+
+                .tool-btnName {
+                    background: $white;
+                    text-wrap: nowrap;
+                    padding: 4px 8px 5px 8px;
+                    position: absolute;
+                    top: 50%;
+                    left: unset;
+                    right: -85px;
+                    transform: translateY(-50%);
+
+                    &::before {
+                        content: "";
+                        width: 8px;
+                        height: 8px;
+                        background: $white;
+                        box-shadow: inherit;
+                        position: absolute;
+                        top: 50%;
+                        left: -3px;
+                        transform: translateY(-50%)rotate(45deg);
+                    }
+                }
+
+                &:hover {
+
+                    .tool-btnName {
+                        display: flex !important;
+                    }
+                }
+            }
+        }
+
+        #plan-mainArea {
+            width: 70%;
+            padding-left: 3.5%;
+            transition: ease-in-out 0.3s;
+
+            .swiper_recent {
+                display: block;
+                overflow-y: hidden;
+
+                .swiper-slide {
+                    width: 100%;
+                    max-height: 500px; /* 限制 Slide 高度 */
+                    overflow: hidden;
+                    
+                    .card {
+                        overflow: hidden;
+    
+                        .card-layer {
+                            display: none;
+                            width: 100%;
+                            height: 100%;
+                            transform: all 1s;
+    
+                            &::before {
+                                content: "";
+                                width: 100%;
+                                height: 100%;
+                                background: black;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                opacity: 0.7;
+                                z-index: 1;
+                            }
+    
+                            &>button {
+                                z-index: 3;
+                            }
+                        }
+    
+                        &:hover {
+    
+                            .card-layer {
+                                display: flex;
+                            }  
+                        }
+                    }
+                }
+
+                .swiper-button-prev,
+                .swiper-button-next{
+                    background: #ffffff99;
+        
+                    &::after {
+                        content: '';
+                    }
+                }
+            }
+
+            .sortable-list {
+
+                .list-group-item {
+
+                    // &.dragging {
+                    //     cursor: grabbing;
+                    // }
+
+                    .dayBlock {
+
+                        &::before {
+                            content: "第 ";
+                        }
+
+                        &::after {
+                            content: " 天";
+                        }
+                    }
+
+                    .dateBlock {
+                        &::before {
+                            content: "- ";
+                        }
+                    }
+                }
+            }
+        }
+
+        .map-Area {
+            width: 30%;
+            height: 100%;
+            background: url(../../assets/googleMap.png);
+            object-fit: cover;
+            position: relative;
+            transition: ease-in-out 0.3s;
+        
+            #close-map-btn {
+                background: $white;
+                position: absolute;
+                top: 15px;
+                left: 15px !important;
+                z-index: 30 !important;
+            }
+        }
+    }
+}
