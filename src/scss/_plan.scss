@@ -3,7 +3,7 @@
     //TODO RWD待調
 
     &>.row {
-        height: 100vh !important;
+        // height: 100vh !important;
         flex-shrink: 0;
 
         #plan-tool {
@@ -48,7 +48,9 @@
 
         #plan-mainArea {
             width: 70%;
-            padding-left: 3.5%;
+            max-height: calc(100vh - $header);
+            overflow-y: auto;
+            padding-left: calc(3.5% + 5px);
             transition: ease-in-out 0.3s;
 
             .swiper_recent {
@@ -110,9 +112,12 @@
 
                 .list-group-item {
 
-                    // &.dragging {
-                    //     cursor: grabbing;
-                    // }
+                    &.hint-addPlace {
+                        
+                        &:hover {
+                            color: $primary;
+                        }
+                    }
 
                     .dayBlock {
 
@@ -137,9 +142,11 @@
         .map-Area {
             width: 30%;
             height: 100%;
+            margin-top: $header;
             background: url(../../assets/googleMap.png);
             object-fit: cover;
-            position: relative;
+            left: unset;
+            right: 0 !important;
             transition: ease-in-out 0.3s;
         
             #close-map-btn {

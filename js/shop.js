@@ -9,7 +9,7 @@ const searchResultCount = document.getElementById('shopSearchResult-count'); // 
 const searchInput = document.getElementById('mag_searchTextInput'); // 搜尋框
 
 // 載入 JSON 檔案
-fetch('../assets/json/travel_Itinerary4.json')
+fetch('../assets/json/travel_Itinerary.json')
   .then((response) => response.json())
   .then((data) => {
     travelData = data;

@@ -40,9 +40,12 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Barriecito&family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Barriecito&family=Noto+Sans+TC:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../src/css/style.css" />
     <title>TAI Zhi | 台誌</title>
   </head>
@@ -276,114 +279,132 @@
           <button
             type="button"
             class="btn btn-sm btn-primary pe-3 mb-3 d-flex align-content-center justify-content-center mb-2"
+            id="addTravelPlan"
+            data-bs-toggle="modal"
+            data-bs-target="#newPlanModal"
           >
             <i class="bi bi-plus fs-4 fw-bold"></i>
-            <p class="fw-bold d-inline-flex my-auto">新增旅程</p>
+            <p
+              class="fw-bold d-inline-flex my-auto"
+            >
+              新增旅程計畫
+            </p>
           </button>
           <div class="plan-group mb-5">
-            <ul class="list-group sortable-list">
-              <div
-                class="d-flex align-content-center justify-content-between mb-3"
-              >
+            <div class="planList mb-4">
+              <ul class="list-group sortable-list">
                 <div
-                  class="d-flex align-content-center justify-content-center fw-bold planName"
+                  class="d-flex align-content-center justify-content-between mb-3"
                 >
-                  <i class="bi bi-map ms-1 me-2"></i>
-                  台北跨年-三天兩夜
+                  <div
+                    class="d-flex align-items-center justify-content-center fw-bold planName"
+                  >
+                    <i class="bi bi-map ms-1 me-2"></i>
+                    <p class="planName">台北跨年-三天兩夜</p>
+                  </div>
+                  <button class="btn btn-light edit_plan" type="button">
+                    <i class="bi bi-pencil-square"></i>
+                  </button>
                 </div>
-                <button class="btn btn-light edit_plan" type="button">
-                  <i class="bi bi-pencil-square"></i>
+                <li class="list-group-item date-group">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <input type="checkbox" class="d-none form-check-input me-2" id="date1Checkbox"/>
+                      <span class="dayBlock">1</span>
+                      <span class="dateBlock">12/30</span>
+                    </div>
+                    <button
+                      class="btn btn-link btn-sm mb-0"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#day1Details"
+                      aria-expanded="false"
+                      aria-controls="day1Details"
+                    >
+                      <i class="bi bi-chevron-down"></i>
+                    </button>
+                  </div>
+                  <div class="collapse mt-2" id="day1Details">
+                    <!-- <ul class="list-group">
+                      <li class="list-group-item sub-group d-flex align-items-center">
+                        <input type="checkbox" class="d-none form-check-input me-2" id="date1_a_Checkbox"/>
+                        捷運台北101/世貿站
+                      </li>
+                      <li class="list-group-item sub-group d-flex align-items-center">
+                        <input type="checkbox" class="d-none form-check-input me-2" id="date1_b_Checkbox"/>
+                        i-Ride飛行劇院
+                      </li>
+                    </ul> -->
+                  </div>
+                </li>
+                <li class="list-group-item date-group">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <input type="checkbox" class="d-none form-check-input me-2" id="date2Checkbox"/>
+                      <span class="dayBlock">2</span>
+                      <span class="dateBlock">12/31</span>
+                    </div>
+                    <button
+                      class="btn btn-link btn-sm"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#day2Details"
+                      aria-expanded="false"
+                      aria-controls="day2Details"
+                    >
+                      <i class="bi bi-chevron-down"></i>
+                    </button>
+                  </div>
+                  <div class="collapse mt-2" id="day2Details">
+                    <ul class="list-group">
+                      <li class="list-group-item">行程尚未規劃</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="list-group-item date-group">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <input type="checkbox" class="d-none form-check-input me-2" id="date3Checkbox"/>
+                      <span class="dayBlock">3</span>
+                      <span class="dateBlock">01/01</span>
+                    </div>
+                    <button
+                      class="btn btn-link btn-sm"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#day3Details"
+                      aria-expanded="false"
+                      aria-controls="day3Details"
+                    >
+                      <i class="bi bi-chevron-down"></i>
+                    </button>
+                  </div>
+                  <div class="collapse mt-2" id="day3Details">
+                    <ul class="list-group">
+                      <li class="list-group-item">行程尚未規劃</li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+              <div class="d-none justify-content-between mt-3 config-row">
+                <button class="btn btn-outline-danger deleteSelected">
+                  刪除選項
                 </button>
-              </div>
-              <li class="list-group-item">
-                <div class="d-flex justify-content-between align-conten-center">
-                  <div>
-                    <input type="checkbox" class="form-check-input me-2" />
-                    <span class="dayBlock">1</span>
-                    <span class="dateBlock">12/30</span>
-                  </div>
-                  <button
-                    class="btn btn-link btn-sm mb-0"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#day1Details"
-                    aria-expanded="false"
-                    aria-controls="day1Details"
-                  >
-                    <i class="bi bi-chevron-down"></i>
+                <div>
+                  <button class="btn btn-ouline-secondary cancelPlan">
+                    取消
                   </button>
+                  <button class="btn btn-primary" id="modalConfirmButton">儲存</button>
                 </div>
-                <div class="collapse mt-2" id="day1Details">
-                  <ul class="list-group">
-                    <li class="list-group-item d-flex align-content-center">
-                      <!-- <i class="bi bi-grip-vertical"></i> -->
-                      捷運台北101/世貿站
-                    </li>
-                    <li class="list-group-item">i-Ride飛行劇院</li>
-                  </ul>
-                </div>
-              </li>
-              <li class="list-group-item">
-                <div class="d-flex justify-content-between align-items-center">
-                  <div>
-                    <input type="checkbox" class="form-check-input me-2" />
-                    <span class="dayBlock">2</span>
-                    <span class="dateBlock">12/31</span>
-                  </div>
-                  <button
-                    class="btn btn-link btn-sm"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#day2Details"
-                    aria-expanded="false"
-                    aria-controls="day2Details"
-                  >
-                    <i class="bi bi-chevron-down"></i>
-                  </button>
-                </div>
-                <div class="collapse mt-2" id="day2Details">
-                  <ul class="list-group">
-                    <li class="list-group-item">行程尚未規劃</li>
-                  </ul>
-                </div>
-              </li>
-              <li class="list-group-item">
-                <div class="d-flex justify-content-between align-items-center">
-                  <div>
-                    <input type="checkbox" class="form-check-input me-2" />
-                    <span class="dayBlock">3</span>
-                    <span class="dateBlock">01/01</span>
-                  </div>
-                  <button
-                    class="btn btn-link btn-sm"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#day3Details"
-                    aria-expanded="false"
-                    aria-controls="day3Details"
-                  >
-                    <i class="bi bi-chevron-down"></i>
-                  </button>
-                </div>
-                <div class="collapse mt-2" id="day3Details">
-                  <ul class="list-group">
-                    <li class="list-group-item">行程尚未規劃</li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-            <div class="d-flex justify-content-between mt-3">
-              <button class="btn btn-outline-danger" id="deleteSelected">
-                刪除選項
-              </button>
-              <div>
-                <button class="btn btn-ouline-secondary" id="cancelPlan">
-                  取消
-                </button>
-                <button class="btn btn-primary" id="savePlan">儲存</button>
               </div>
             </div>
           </div>
         </div>
         <!-- 右側地圖 -->
-        <div class="col-5 p-0 map-Area">
+        <div class="col-5 p-0 map-Area position-fixed top-0">
           <button
             class="btn btn-sm shadow-lg position-absolute"
             role="button"
@@ -403,6 +424,44 @@
         checked
       />
     </div>
+    <div
+  class="modal fade"
+  id="newPlanModal"
+  tabindex="-1"
+  aria-labelledby="fullscreenModalLabel"
+  aria-hidden="true"
+>
+  <div
+    id="newPlan_dialog"
+    class="modal-dialog modal-xl modal-dialog-centered"
+  >
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title d-flex" id="fullscreenModalLabel">
+          <i class="bi bi-map ms-1 me-2"></i>
+          <span id="modalTitle">標題</span>
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          data-bs-dismiss="modal"
+        >
+          取消
+        </button>
+        <button type="button" class="btn btn-primary">新增旅程</button>
+      </div>
+    </div>
+  </div>
+</div>
     <div
       class="cart-popup bg-light-subtle rounded shadow-lg position-absolute d-none"
     >

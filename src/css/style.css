@@ -100,11 +100,6 @@ a {
   text-decoration: none;
 }
 
-input[type=date]::-webkit-inner-spin-button,
-input[type=date]::-webkit-calendar-picker-indicator {
-  opacity: 0;
-}
-
 img {
   display: block;
 }
@@ -825,7 +820,6 @@ html body .magazine_page .mag-wrap > .row > .col .card:hover .card-layer {
   display: flex;
 }
 html body .plan_page > .row {
-  height: 100vh !important;
   flex-shrink: 0;
 }
 html body .plan_page > .row #plan-tool {
@@ -862,7 +856,9 @@ html body .plan_page > .row #plan-tool .tool-Btn:hover .tool-btnName {
 }
 html body .plan_page > .row #plan-mainArea {
   width: 70%;
-  padding-left: 3.5%;
+  max-height: calc(100vh - 66px);
+  overflow-y: auto;
+  padding-left: calc(3.5% + 5px);
   transition: ease-in-out 0.3s;
 }
 html body .plan_page > .row #plan-mainArea .swiper_recent {
@@ -909,6 +905,9 @@ html body .plan_page > .row #plan-mainArea .swiper_recent .swiper-button-prev::a
 html body .plan_page > .row #plan-mainArea .swiper_recent .swiper-button-next::after {
   content: "";
 }
+html body .plan_page > .row #plan-mainArea .sortable-list .list-group-item.hint-addPlace:hover {
+  color: #007bff;
+}
 html body .plan_page > .row #plan-mainArea .sortable-list .list-group-item .dayBlock::before {
   content: "第 ";
 }
@@ -921,9 +920,11 @@ html body .plan_page > .row #plan-mainArea .sortable-list .list-group-item .date
 html body .plan_page > .row .map-Area {
   width: 30%;
   height: 100%;
+  margin-top: 66px;
   background: url(../../assets/googleMap.png);
   object-fit: cover;
-  position: relative;
+  left: unset;
+  right: 0 !important;
   transition: ease-in-out 0.3s;
 }
 html body .plan_page > .row .map-Area #close-map-btn {

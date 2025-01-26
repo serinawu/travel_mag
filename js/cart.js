@@ -116,8 +116,6 @@ class ShoppingCart {
         });
       }
     }
-         
-      
   
     // 綁定事件
     attachEventListeners() {
@@ -129,6 +127,15 @@ class ShoppingCart {
       });
     }
   }
+
+  // 點擊結帳按鈕跳轉至結帳頁面
+  // document.querySelector('.checkout-btn').addEventListener('click', () => {
+  //   if (){
+  //     window.location.href = './html/checkout.html';
+  //   } else {
+  //     window.location.href = './checkout.html';
+  //   }
+  // });
   
   
   // 初始化購物車

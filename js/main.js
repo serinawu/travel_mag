@@ -110,24 +110,20 @@ window.showForm = function(formId) { // 綁定到 window
 //backToTop
 let backToTop = document.getElementById("backToTop");
 
-window.onscroll= function() {scrollFunction()};
+window.onscroll= ()=> {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    backToTop.style.display = "flex";
+  } else {
+      backToTop.style.display = "none";
+  }
+};
 
-function scrollFunction(){
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        backToTop.style.display = "flex";
-    } else {
-        backToTop.style.display = "none";
-    }
-}
-
-function topFunction(){
-    window.scroll({
-        top: 0,
-        behavior: 'smooth',
-    });
-    // document.body.scrollTop = 0;
-    // document.documentElement.scrollTop = 0;
-}
+backToTop.addEventListener("click", () =>{
+  window.scroll({
+      top: 0,
+      behavior: 'smooth',
+  });
+})
 
 //day&night
 document.addEventListener("DOMContentLoaded", function(){
